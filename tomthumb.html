@@ -6,37 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="tomthumb.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
     <div id="example" class="container">
-        <h1>Danik's crazy  story!</h1>
+        <h1>Picture size calculator!</h1>
 
         <form action="/action_page.php">
             <label for="fname">Width(px):</label>
-            <input type="text" id="w" name="Width" value="100"><br>
+            <input type="text" id="widthInput" value="100"><br>
             <label for="lname">Height(px):</label>
-            <input type="text" id="h" name="Height" value="80"><br>
+            <input type="text" id="heightInput"  value="80"><br>
             <label for="lname">number of colors:</label>
-            <input type="text" id="nc" name="Colors" value="4"><br>
+            <input type="text" id="numberOfColor" value="4"><br>
             <h1>
             <!-- <input type="submit" value="Tell story"> -->
             <button type="button">calculate file size!</button>
             
             </h1>
           </form>
-          <h2> </h2>
-          
+          <h2></h2>
 
-        <!-- <select name="countries" id="place">
-            <option value="">Pick ur dest" </option>
-            <option value="aaAA" data-price="100">aaAA</option>
-            <option value="bBB" data-price="100">bBB</option>
-            <option value="cCC" data-price="100">cCC</option>
-        </select> -->
+          <div id="loader" class="hidden">
+            <div class="spinner-border " role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+          </div>
+       
+          
+        
+
+
     </div>
     <div id="result" class="container"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
     <script src="tomthumb.js";></script>
     </body>
 </html>

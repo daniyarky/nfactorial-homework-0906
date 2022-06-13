@@ -1,5 +1,5 @@
 .container{
-    background-color: yellowgreen;
+    background-color: rgb(53, 205, 50);
     height: fit-content;
     margin: 50 px auto;
     flex-direction: row;
@@ -13,8 +13,8 @@
 }
 
 button {
-    background-color: peachpuff;
-    color: black;
+    background-color: rgb(191, 185, 255);
+    color: rgb(0, 0, 0);
     font-weight: bold;
     border: none;
     padding: 5px;
@@ -24,9 +24,14 @@ button {
     cursor: pointer;
     text-align: center;
     display: inline-block;
+    
 }
 
 form { 
     display: block;
     margin-top: 0em;
   }
+
+.hidden {
+    display: none;
+}
